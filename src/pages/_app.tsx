@@ -6,6 +6,8 @@ import {usePathname} from "next/navigation";
 import {Provider} from "react-redux";
 import {store} from "@/store/store";
 
+import "@/styles/global.scss";
+
 interface LayoutProps {
     children: ReactNode;
 }
