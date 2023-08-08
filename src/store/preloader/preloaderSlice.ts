@@ -4,11 +4,22 @@ import type {PayloadAction} from "@reduxjs/toolkit";
 export const preloaderSlice = createSlice({
     name: 'preloader',
     initialState: {
-        value: false,
+        siteLoaded: false,
+        preloaderDone: false,
+        splineLoaded: false
     },
     reducers: {
-        siteLoaded: (state) => {
-            state.value = true;
+        splineLoaded: (state) => {
+            state.splineLoaded = true;
+            if(state.preloaderDone) {
+                state.siteLoaded = true;
+            }
+        },
+        preloaderDone: (state) => {
+            state.preloaderDone = true;
+            if(state.splineLoaded){
+                state.siteLoaded = true;
+            }
         }
     },
 })

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply bg-solid text-white max-w-full overflow-x-hidden;
+}
+
+header, footer{
+  display: none;
+}
+
+.responsive_text {
+  font-size: var(--small-size);
+
+  $text-size: var(--phone-size), var(--tablet-size), var(--desktop-size);
+  $sizes: 640, 1024, 1536;
+
+  $min-text: var(--small-size);
+  $min-size: 200;
+
+  @each $size, $text in zip($sizes, $text-size) {
+    @media only screen and (min-width: #{$min-size}px) and (max-width: #{$size}px) {
+      font-size: calc(calc(#{$min-text} * 1px) + (#{$text} - #{$min-text}) * ((100vw - #{$min-size} * 1px) / (#{$size} - #{$min-size})));
+
+    }
+    $min-size: $size;
+    $min-text: $text;
+  }
+  @media only screen and (min-width: #{$min-size}px) {
+    font-size: calc(#{$min-text} * 1px);
+  }
+}

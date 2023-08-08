@@ -1,0 +1,14 @@
+.svg_animation{
+  stroke-dasharray: 1820;
+  stroke-dashoffset: 1820;
+    animation: svg_animation var(--duration) linear;
+}
+@keyframes svg_animation {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+.outlined_text{
+  @apply text-solid;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}

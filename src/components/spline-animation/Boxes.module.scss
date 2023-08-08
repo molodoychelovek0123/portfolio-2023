@@ -1,0 +1,7 @@
+.wrapper{
+  @apply w-full overflow-x-hidden;
+  canvas{
+    width: 100% !important;
+    height: auto !important;
+  }
+}
