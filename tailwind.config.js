@@ -19,6 +19,9 @@ module.exports = {
       fontFamily:{
         title:['Syne', 'sans-serif'],
       },
+      maxWidth:{
+        "2.5xl": "45rem",
+      },
       fontSize:{
         title:"3.75rem",
       },

@@ -8,6 +8,7 @@ import {store} from "@/store/store";
 
 import "@/styles/global.scss";
 
+
 interface LayoutProps {
     children: ReactNode;
 }
@@ -18,13 +19,13 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
 
     return (
         <>
-            <header>
-                <h1> Im a header</h1>
-            </header>
-            <main className="">{children}</main>
-            <footer>
-                <h1> Im a footer</h1>
-            </footer>
+                <header>
+                    <h1> Im a header</h1>
+                </header>
+                <main className="relative">{children}</main>
+                <footer>
+                    <h1> Im a footer</h1>
+                </footer>
         </>
     );
 };

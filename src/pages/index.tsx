@@ -4,8 +4,8 @@ import {Preloader} from "@/components/preloader/Preloader";
 import {About} from "@/components/about/About";
 import {useSelector} from "react-redux";
 import {RootState} from "@/store/store";
-
-
+import {Expertise} from "@/components/expertise/Expertise";
+import Scroll from "@/components/smooth-scroll/Scroll";
 
 
 const Home: React.FC = () => {
@@ -14,10 +14,16 @@ const Home: React.FC = () => {
     return (
         <>
             <Preloader/>
-            <Boxes/>
-            <div className={`content transition-opacity delay-1000 duration-700 ease-in-out  ${isLoaded? "opacity-100" : "opacity-0"}`}>
-            <About/>
-            </div>
+
+                <Boxes/>
+
+                <div
+                    className={`content transition-opacity delay-1000 duration-700 ease-in-out  ${isLoaded ? "opacity-100" : "opacity-0 mt-[100vh]"}`}>
+                    <About/>
+                    <Expertise/>
+                </div>
+
+            <Scroll/>
         </>
     );
 };

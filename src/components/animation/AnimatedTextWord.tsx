@@ -1,13 +1,9 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {useInView} from "react-intersection-observer";
 
-export const AnimatedTextWord = ({text}: { text: string }) => {
+export const AnimatedTextWord = ({text, className}: { text: string, className?: string }) => {
 
-    const {ref, inView} = useInView({
-        threshold: 0.4,
-        triggerOnce: true,
-    });
+
     const words = text.split(" ");
 
 // Variants for Container of words.
@@ -44,13 +40,12 @@ export const AnimatedTextWord = ({text}: { text: string }) => {
 
     return (
         <>
-            {inView && <> AAA </>}
             <motion.div
-                style={{overflow: "hidden", display: "flex", fontSize: "2rem"}}
+                className={className}
                 variants={container}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{once: true}}
             >
                 {words.map((word, index) => (
                     <motion.span
