@@ -41,7 +41,7 @@ module.exports = {
     }
   },
   plugins: [
-    plugin(({addComponents, theme, addUtilities}) => {
+    plugin(({addComponents, theme}) => {
       addComponents({
         '.a-centered': {
           position: 'absolute',

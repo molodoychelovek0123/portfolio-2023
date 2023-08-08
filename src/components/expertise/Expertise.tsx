@@ -5,7 +5,7 @@ import {InView} from "react-intersection-observer"
 export const Expertise = () => {
     return (
         <InView triggerOnce threshold={1}>
-            {({inView, ref, entry}) => (
+            {({inView, ref}) => (
                 <div className="container mt-44" ref={ref}>
                     <div className=" max-w-2.5xl">
                     <AnimatedTextWord className="font-title text-5xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"

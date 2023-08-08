@@ -2,7 +2,7 @@ import {AppProps} from 'next/app';
 import Head from 'next/head';
 import React, {ReactNode} from 'react';
 
-import {usePathname} from "next/navigation";
+//import {usePathname} from "next/navigation";
 import {Provider} from "react-redux";
 import {store} from "@/store/store";
 
@@ -15,7 +15,7 @@ interface LayoutProps {
 
 
 const Layout: React.FC<LayoutProps> = ({children}) => {
-    const pageType = usePathname();
+    //const pageType = usePathname();
 
     return (
         <>
