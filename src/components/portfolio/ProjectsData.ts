@@ -1,4 +1,8 @@
 import {ProjectProps, Technologies as t} from "./ProjectCard";
+import sk8 from "@/static-content/portfolio-products/sk8.png";
+import gomadre from "@/static-content/portfolio-products/gomadre.png"
+import box_dev from "@/static-content/portfolio-products/box.dev.png"
+import hey from "@/static-content/portfolio-products/hey.png"
 
 export const Projects: ProjectProps[] = [
     {
@@ -14,6 +18,7 @@ export const Projects: ProjectProps[] = [
                 url: "https://sk8ology.com/"
             }
         ],
+        image: sk8,
         cardType: "large",
         technologies: [
             t.ts,
@@ -21,8 +26,9 @@ export const Projects: ProjectProps[] = [
             t.sass,
             t.tailwind,
         ],
-        customClassNames:{
-            description: "max-w-[500px]"
+        customClassNames: {
+            description: "max-w-[500px]",
+            image: "w-full h-auto left-0"
         }
     },
     {
@@ -34,12 +40,17 @@ export const Projects: ProjectProps[] = [
                 url: "https://gomadre.com/"
             }
         ],
+        image: gomadre,
         technologies: [
             t.js,
             t.liquid,
             t.shopify,
         ],
-        cardType: "small"
+        cardType: "small",
+        customClassNames: {
+            description: "max-w-[390px]",
+            image: "max-w-[50%] h-auto right-0"
+        }
     },
     {
         title: "Conversion Opt.",
@@ -61,7 +72,9 @@ export const Projects: ProjectProps[] = [
             t.tailwind,
         ],
         cardType: "small",
-
+        customClassNames: {
+            description: "max-w-[390px]"
+        }
     },
     {
         title: "Portfolio 2022",
@@ -82,6 +95,9 @@ export const Projects: ProjectProps[] = [
             t.sass,
         ],
         cardType: "small",
+        customClassNames: {
+            description: "max-w-[390px]"
+        }
     },
     {
         title: "DGL",
@@ -98,6 +114,9 @@ export const Projects: ProjectProps[] = [
             t.php,
         ],
         cardType: "medium",
+        customClassNames: {
+            description: "max-w-[500px]"
+        }
     },
     {
         title: "Box.dev",
@@ -108,6 +127,7 @@ export const Projects: ProjectProps[] = [
                 url: "https://studiobox.dev/"
             }
         ],
+        image: box_dev,
         technologies: [
             t.js,
             t.php,
@@ -115,9 +135,13 @@ export const Projects: ProjectProps[] = [
         ],
         cardType: "small",
 
+        customClassNames: {
+            description: "max-w-[400px]",
+            image: "max-w-[61%] h-auto right-0"
+        }
     },
     {
-        title:"Sommtable",
+        title: "Sommtable",
         description: " Sommtable is your guide to the world of wine and gastronomy, a multi-product project. The platform connects connoisseurs with leading experts. Here you can book online classes, tastings and you have the opportunity to purchase exclusive products. Sommtable is not just a web platform, it is a real community of people who love to explore, learn and enjoy the world of wine and food.",
         links: [
             {
@@ -143,10 +167,12 @@ export const Projects: ProjectProps[] = [
             t.sass,
             t.shopify,
         ],
-        cardType: "large",
+        cardType: "large", customClassNames: {
+            description: "max-w-[650px]"
+        }
     },
     {
-        title:"Class.wiki",
+        title: "Class.wiki",
         description: "An online educational learning platform created by a team of developers. I was responsible for developing the React part of the system, providing an interactive and dynamic experience for users",
         links: [
             {
@@ -158,7 +184,9 @@ export const Projects: ProjectProps[] = [
             t.ts,
             t.react,
             t.sass,
-        ]
+        ], customClassNames: {
+            description: "max-w-[390px]"
+        }
     },
     {
         title: "HEY (:",
@@ -169,11 +197,16 @@ export const Projects: ProjectProps[] = [
                 url: "https://heywithlove.ru/"
             }
         ],
+        image:hey,
         technologies: [
             t.js,
             t.tilda
         ],
         cardType: "medium",
+        customClassNames: {
+            description: "max-w-[540px]",
+            image: "max-w-[50%] h-auto right-0"
+        }
     },
     {
         title: "Agave En Linea",
@@ -188,6 +221,11 @@ export const Projects: ProjectProps[] = [
             t.js,
             t.squarespace,
             t.shopify,
-        ]
+        ],
+        cardType: "small",
+
+        customClassNames: {
+            description: "max-w-[400px]"
+        }
     }
 ]
