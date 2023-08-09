@@ -1,5 +1,8 @@
 import React from 'react';
 import {InView} from "react-intersection-observer"
+import {Grain} from "@/components/grain/Grain"
+
+import styles from './ProjectCard.module.scss';
 
 import Apple from '@/static-content/apple.svg';
 import Next from '@/static-content/next.svg';
@@ -57,8 +60,11 @@ export const ProjectCard = ({title, description, image, links,technologies, card
 
                 {({inView, ref}) => (
                     <div
-                        className={`relative ${cardType === "large" ? LARGE_CARD : cardType === "medium" ? MEDIUM_CARD : SMALL_CARD} transition-opacity duration-700 ease-in-out ${inView ? "opacity-100" : "opacity-0"}`}
+                        className={`relative rounded-card ${styles.card} ${cardType === "large" ? LARGE_CARD : cardType === "medium" ? MEDIUM_CARD : SMALL_CARD} transition-opacity duration-700 ease-in-out ${inView ? "opacity-100" : "opacity-0"}`}
                         ref={ref}>
+                        <div className="grain">
+                        <Grain/>
+                        </div>
                         <div
                             className="w-full h-full rounded-card overflow-hidden border  border-outline p-4 md:p-6 xl:p-8 pr-6 xl:pr-11">
                             <h3 className={`responsive_text font-title leading-title ${customClassNames ? customClassNames.title : ""}`}

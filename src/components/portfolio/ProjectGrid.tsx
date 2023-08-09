@@ -7,7 +7,7 @@ import {Projects} from "./ProjectsData";
 export const ProjectGrid = () => {
     return (
         <>
-            <div className="container mb-96">
+            <div className="container my-40 xl:my-48">
                 <AnimatedTextWord
                     className="font-title text-5xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
                     text="Check some of my works!"/>
