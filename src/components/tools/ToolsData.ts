@@ -29,10 +29,6 @@ export const Data = [
                 icon: t.tina,
             },
             {
-              name: "Jest",
-              icon: t.jest,
-            },
-            {
                 name: "Tailwind",
                 icon: t.tailwind,
             },
@@ -63,13 +59,13 @@ export const Data = [
         title: "Other",
         items: [
             {
+                name: "Jest",
+                icon: t.jest,
+            },
+            {
               name: "Github",
               icon: t.github,
             },
-            {
-              name: "SQL",
-              icon: t.sql,
-            }            ,
             {
               name: "Prisma",
               icon: t.prisma,
