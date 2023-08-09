@@ -12,11 +12,11 @@ export const Projects: ProjectProps[] = [
         links: [
             {
                 text: "Visit Site",
-                url: "https://sk8ology.com/"
+                url: "https://sk8.studiobox.dev"
             },
             {
                 text: "Github",
-                url: "https://sk8ology.com/"
+                url: "https://github.com/molodoychelovek0123/board-online-shop"
             }
         ],
         image: sk8,
@@ -38,7 +38,7 @@ export const Projects: ProjectProps[] = [
         links: [
             {
                 text: "Visit Site",
-                url: "https://gomadre.com/"
+                url: "https://gomadreshop.com"
             }
         ],
         image: gomadre,
@@ -59,11 +59,11 @@ export const Projects: ProjectProps[] = [
         links: [
             {
                 text: "Visit Site",
-                url: "https://conversionopt.com/"
+                url: "https://conversionoptimizationpros.com"
             },
             {
                 text: "Github",
-                url: "https://conversionopt.com/"
+                url: "https://github.com/molodoychelovek0123/tina-conversionoptimizationpros"
             }
         ],
         technologies: [
@@ -83,11 +83,11 @@ export const Projects: ProjectProps[] = [
         links: [
             {
                 text: "Visit Site",
-                url: "https://portfolio-2022.netlify.app/"
+                url: "https://cv.studiobox.dev/"
             },
             {
                 text: "Github",
-                url: "https://github.com/John-Murphy/Portfolio-2022"
+                url: "https://github.com/molodoychelovek0123/portfolio-rjs"
             }
         ],
         technologies: [
@@ -106,7 +106,7 @@ export const Projects: ProjectProps[] = [
         links: [
             {
                 text: "Visit Site",
-                url: "https://dgl.netlify.app/"
+                url: "https://dglandscapes.com"
             }
         ],
         technologies: [
