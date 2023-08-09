@@ -6,6 +6,7 @@ import {useSelector} from "react-redux";
 import {RootState} from "@/store/store";
 import {Expertise} from "@/components/expertise/Expertise";
 import {ProjectGrid} from "@/components/portfolio/ProjectGrid";
+import {Tools} from "@/components/tools/Tools";
 
 
 const Home: React.FC = () => {
@@ -28,6 +29,7 @@ const Home: React.FC = () => {
                 <About/>
                 <Expertise/>
                 <ProjectGrid/>
+                <Tools/>
             </div>
 
         </div>

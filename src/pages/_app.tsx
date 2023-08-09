@@ -30,7 +30,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
         fontSize: 16,
         fontWeight: 900,
         opacity: 0.7,
-        fontColor: "#ffffff",
+        fontColor: "#000000",
         zIndex: 35,
         size: 50,
         radius: 5,

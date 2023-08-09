@@ -1,6 +1,9 @@
 import Apple from '@/static-content/apple.svg';
 import Next from '@/static-content/next.svg';
-export enum Technologies {
+
+import {StaticImport} from "next/dist/shared/lib/get-img-props";
+
+export enum Technologies{
     apple = Apple,
     next = Next,
     js = Apple,
@@ -15,4 +18,12 @@ export enum Technologies {
     gsap = Apple,
     squarespace = Apple,
     tilda = Apple,
+    jest = Apple,
+    redux = Apple,
+    node = Apple,
+    express = Apple,
+    github = Apple,
+    sql = Apple,
+    figma = Apple,
+    prisma = Apple,
 }
