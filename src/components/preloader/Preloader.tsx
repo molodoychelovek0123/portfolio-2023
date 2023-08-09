@@ -3,7 +3,6 @@ import {useSelector} from 'react-redux'
 import {RootState} from '@/store/store';
 import {useActions} from "@/hooks/useActions";
 import styles from "./Preloader.module.scss";
-import {AnimatedTextWord} from "@/components/animation/AnimatedTextWord";
 
 const PRELOADER_DURATION = 3000;
 
@@ -35,7 +34,7 @@ export const Preloader = () => {
             setTimeout( () => {
                 preloaderDone();
             }, PRELOADER_DURATION)
-    }, [splineLoaded])
+    }, [splineLoaded, preloaderDone])
 
     return (
         <div

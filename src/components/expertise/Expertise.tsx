@@ -13,7 +13,7 @@ export const Expertise = () => {
                     <p className={`leading-description text-base md:text-lg xl:text-2xl transition-opacity duration-700 ease-in-out  ${inView ? "opacity-100" : "opacity-0"}`}>
 
                         Welcome to my world of blending creativity with code!
-                        <br/><br/> I'm a frontend developer on a mission to create seamless web experiences that
+                        <br/><br/> I&apos;m a frontend developer on a mission to create seamless web experiences that
                         captivate and
                         engage. With
                         a foundation in HTML, CSS, and JavaScript, I craft interfaces that come to life.
@@ -21,7 +21,7 @@ export const Expertise = () => {
                         understanding
                         their unique needs, I ensure that every project not only meets their expectations but leaves
                         them
-                        satisfied. Let's embark on a journey where innovation and customer satisfaction drive my
+                        satisfied. Let&apos;s embark on a journey where innovation and customer satisfaction drive my
                         frontend
                         endeavors. </p>
                     </div>

@@ -1,4 +1,4 @@
-
+/*
 import { useState, useEffect } from "react";
 
 export default function useWindowSize() {
@@ -27,3 +27,4 @@ export default function useWindowSize() {
         return {width: 0, height: 0};
     }
 }
+*/

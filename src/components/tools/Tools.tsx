@@ -10,8 +10,8 @@ export const Tools = () => (
         <AnimatedTextWord
             className="font-title text-5xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
             text="Creating web applications using:"/>
-        {Data.map(item =>
-            <ToolsRow {...item} />
+        {Data.map((item,index) =>
+            <ToolsRow {...item} key={index}/>
         )}
 
 
