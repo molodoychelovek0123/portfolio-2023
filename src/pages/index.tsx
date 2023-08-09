@@ -5,26 +5,32 @@ import {About} from "@/components/about/About";
 import {useSelector} from "react-redux";
 import {RootState} from "@/store/store";
 import {Expertise} from "@/components/expertise/Expertise";
-import Scroll from "@/components/smooth-scroll/Scroll";
+import {ProjectGrid} from "@/components/portfolio/ProjectGrid";
 
 
 const Home: React.FC = () => {
     const isLoaded = useSelector((state: RootState) => state.preloaderReducer.siteLoaded)
 
     return (
-        <>
+        <div>
+            <div
+                className="fixed inset-0 p-1 w-full h-full backdrop-blur-[8px] pointer-events-none z-50 opacity-1 overlay-mask"
+            ></div>
+            <div
+                className="fixed inset-0 p-1 w-full h-full bg-gradient-to-t from-bg-dark to-transparent opacity-40 pointer-events-none z-40"
+            ></div>
             <Preloader/>
 
-                <Boxes/>
+            <Boxes/>
 
-                <div
-                    className={`content transition-opacity delay-1000 duration-700 ease-in-out  ${isLoaded ? "opacity-100" : "opacity-0 mt-[100vh]"}`}>
-                    <About/>
-                    <Expertise/>
-                </div>
+            <div
+                className={`content transition-opacity delay-1000 duration-700 ease-in-out  ${isLoaded ? "opacity-100" : "opacity-0 mt-[100vh]"}`}>
+                <About/>
+                <Expertise/>
+                <ProjectGrid/>
+            </div>
 
-            <Scroll/>
-        </>
+        </div>
     );
 };
 

@@ -1,0 +1,7 @@
+.grid {
+  display: grid;
+  @apply auto-rows-auto auto-cols-auto gap-4;
+  @media (min-width: 768px){
+    grid-template-columns: 1fr 0.57fr 1fr;
+  }
+}

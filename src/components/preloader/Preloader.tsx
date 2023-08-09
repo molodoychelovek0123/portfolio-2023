@@ -39,7 +39,7 @@ export const Preloader = () => {
 
     return (
         <div
-            className={`fixed z-50 top-0 left-0 w-full h-full bg-solid transition-opacity duration-700 ease-in-out ${isLoaded ? 'opacity-0 pointer-events-none' : "opacity-100"}`}>
+            className={`fixed z-50 top-0 left-0 w-full h-[100vh] bg-solid transition-opacity duration-700 ease-in-out ${isLoaded ? 'opacity-0 pointer-events-none' : "opacity-100"}`}>
 
             <OutlineSvg isGradient={true}/>
             {splineLoaded &&

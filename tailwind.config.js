@@ -37,6 +37,8 @@ module.exports = {
       },
       colors:{
         "solid": "#0f0f15",
+        "outline": "#e5e7eb",
+        "descriptionColor": "#96979D",
       }
     }
   },
