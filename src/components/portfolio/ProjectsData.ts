@@ -1,4 +1,5 @@
-import {ProjectProps, Technologies as t} from "./ProjectCard";
+import {ProjectProps} from "./ProjectCard";
+import {Technologies as t} from "@/components/technologies/Technologies";
 import sk8 from "@/static-content/portfolio-products/sk8.png";
 import gomadre from "@/static-content/portfolio-products/gomadre.png"
 import box_dev from "@/static-content/portfolio-products/box.dev.png"
@@ -197,7 +198,7 @@ export const Projects: ProjectProps[] = [
                 url: "https://heywithlove.ru/"
             }
         ],
-        image:hey,
+        image: hey,
         technologies: [
             t.js,
             t.tilda

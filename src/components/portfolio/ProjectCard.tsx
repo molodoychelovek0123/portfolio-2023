@@ -4,8 +4,7 @@ import {Grain} from "@/components/grain/Grain"
 
 import styles from './ProjectCard.module.scss';
 
-import Apple from '@/static-content/apple.svg';
-import Next from '@/static-content/next.svg';
+import {Technologies} from "@/components/technologies/Technologies";
 import Image from "next/image";
 import {StaticImport} from "next/dist/shared/lib/get-img-props";
 
@@ -13,22 +12,7 @@ const LARGE_CARD = "md:col-span-2 md:row-span-2";
 const MEDIUM_CARD = "md:col-span-2 md:row-span-1";
 const SMALL_CARD = "md:col-span-1 md:row-span-1";
 
-export enum Technologies {
-    apple = Apple,
-    next = Next,
-    js = Apple,
-    ts = Apple,
-    tina = Apple,
-    tailwind = Apple,
-    react = Apple,
-    liquid = Apple,
-    shopify = Apple,
-    sass = Apple,
-    php = Apple,
-    gsap = Apple,
-    squarespace = Apple,
-    tilda = Apple,
-}
+
 
 export type ProjectProps = {
     title: string;
