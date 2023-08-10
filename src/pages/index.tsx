@@ -7,10 +7,13 @@ import {RootState} from "@/store/store";
 import {Expertise} from "@/components/expertise/Expertise";
 import {ProjectGrid} from "@/components/portfolio/ProjectGrid";
 import {Tools} from "@/components/tools/Tools";
+import {Contact} from "@/components/contact/Contact";
 
 
 const Home: React.FC = () => {
     const isLoaded = useSelector((state: RootState) => state.preloaderReducer.siteLoaded)
+    const splineLoaded = useSelector((state: RootState) => state.preloaderReducer.splineLoaded)
+
 
     return (
         <div>
@@ -23,15 +26,16 @@ const Home: React.FC = () => {
             <Preloader/>
 
             <Boxes/>
-
-            <div
-                className={`content transition-opacity delay-1000 duration-700 ease-in-out  ${isLoaded ? "opacity-100" : "opacity-0 mt-[100vh]"}`}>
-                <About/>
-                <Expertise/>
-                <ProjectGrid/>
-                <Tools/>
-            </div>
-
+            {splineLoaded &&
+                <div
+                    className={`content transition-opacity delay-1000 duration-700 ease-in-out  ${isLoaded ? "opacity-100" : "opacity-0 mt-[100vh]"}`}>
+                    <About/>
+                    <Expertise/>
+                    <ProjectGrid/>
+                    <Tools/>
+                    <Contact/>
+                </div>
+            }
         </div>
     );
 };

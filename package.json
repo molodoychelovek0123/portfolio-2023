@@ -12,6 +12,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.412",
+    "autoprefixer": "^10.4.14",
     "blobity": "^0.2.3",
     "framer-motion": "^10.15.1",
     "next": "13.4.13",
@@ -23,14 +24,14 @@
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "@types/react-loadable": "^5.5.2",
-    "eslint-plugin-react": "7.26.1",
-    "eslint-plugin-react-hooks": "4.3.0",
-    "eslint-config-prettier": "8.3.0",
-    "typescript": "5.1.6",
+    "@types/loadable__component": "^5.13.4",
+    "@types/node": "20.4.8",
     "@types/react": "18.2.19",
     "@types/react-dom": "18.2.7",
-    "@types/node": "20.4.8",
-    "@types/loadable__component": "^5.13.4"
+    "@types/react-loadable": "^5.5.2",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-react": "7.26.1",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "typescript": "5.1.6"
   }
 }

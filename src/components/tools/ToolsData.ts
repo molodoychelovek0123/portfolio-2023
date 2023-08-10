@@ -41,10 +41,7 @@ export const Data = [
     {
         title: "Backend",
         items: [
-            {
-                name: "PHP",
-                icon: t.php,
-            },
+
             {
                 name: "NodeJS",
                 icon: t.node,
@@ -52,7 +49,11 @@ export const Data = [
             {
                 name: "Express",
                 icon: t.express,
-            }
+            },
+            {
+                name: "PHP",
+                icon: t.php,
+            },
         ]
     },
     {
@@ -63,16 +64,16 @@ export const Data = [
                 icon: t.jest,
             },
             {
-              name: "Github",
-              icon: t.github,
+                name: "Github",
+                icon: t.github,
             },
             {
-              name: "Prisma",
-              icon: t.prisma,
+                name: "Prisma",
+                icon: t.prisma,
             },
             {
-              name: "Figma",
-              icon: t.figma,
+                name: "Figma",
+                icon: t.figma,
             }
         ]
     }
