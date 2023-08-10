@@ -6,6 +6,7 @@ import styles from "./Preloader.module.scss";
 
 const PRELOADER_DURATION = 3000;
 
+
 const OutlineSvg = ({isGradient}: { isGradient: boolean }) => (
 
     <svg className={`a-centered w-[30%] h-[60%] ${isGradient ? '' : styles.svg_animation} pb-[3%]`} width="487" height="517"
@@ -20,8 +21,7 @@ const OutlineSvg = ({isGradient}: { isGradient: boolean }) => (
                 <stop stopColor="white"/>
                 <stop offset="1" stopColor="white" stopOpacity="0.02"/>
             </radialGradient>
-            <linearGradient id="linear_gradient" x1="243.5" y1="2" x2="243.5" y2="515.951"
-                            gradientUnits="userSpaceOnUse">
+            <linearGradient id="linear_gradient" x1="50" y1="70" x2="422" y2="444" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#10469E"/>
                 <stop offset="0.255208" stopColor="#B34BCF"/>
                 <stop offset="0.630208" stopColor="#135A42"/>
