@@ -40,7 +40,7 @@ export const Preloader = () => {
     React.useEffect(()=>{
         if(splineLoaded)
             setTimeout( () => {
-                // preloaderDone();
+                preloaderDone();
             }, PRELOADER_DURATION)
     }, [splineLoaded, preloaderDone])
 
