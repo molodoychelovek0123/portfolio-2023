@@ -5,8 +5,10 @@ import styles from './Contact.module.scss';
 
 import mail from "@/static-content/mail.svg"
 import tg from "@/static-content/tg.svg"
+import useTranslation from "next-translate/useTranslation";
 
 export const Contact = ()=> {
+    const {t} = useTranslation();
     return (
                 <div className="container my-24 mx-auto md:px-6">
                     <div className="mb-32">
@@ -18,7 +20,7 @@ export const Contact = ()=> {
                             <div className="text-center">
                                 <div className="mt-[-170px] block rounded-lg  bg-[hsla(0,0%,100%,0.7)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:py-16 md:px-12">
                                     <h1 className="mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-                                       Contact me
+                                        {t('contact:title')}
                                     </h1>
 
                                     <div className="flex flex-wrap justify-center gap-4 md:gap-5 xl:gap-6">

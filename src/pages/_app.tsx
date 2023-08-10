@@ -1,6 +1,6 @@
 import {AppProps} from 'next/app';
 import Head from 'next/head';
-import React, {ReactNode, useEffect, useState} from 'react';
+import React, {ReactNode} from 'react';
 
 //import {usePathname} from "next/navigation";
 import {Provider} from "react-redux";
@@ -8,6 +8,8 @@ import {store} from "@/store/store";
 
 import "@/styles/global.scss";
 import useBlobity from "blobity/lib/react/useBlobity";
+import useTranslation from "next-translate/useTranslation";
+import Link from "next/link";
 
 
 interface LayoutProps {
@@ -41,6 +43,8 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
             <header>
                 <h1> Im a header</h1>
             </header>
+            <Link locale="en" href={"/"} > English </Link>
+            <Link locale="ru" href={"/"} > Russian </Link>
             <main className="relative">{children}</main>
             <footer>
                 <h1> Im a footer</h1>
@@ -50,6 +54,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
 };
 
 function MyApp({Component, pageProps}: AppProps) {
+    const {t} = useTranslation();
     return (
         <>
             <Head>
@@ -59,12 +64,65 @@ function MyApp({Component, pageProps}: AppProps) {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
-                <meta name="description" content="Your website description here"/>
-                {/* Add more meta tags as needed */}
-                <title>Your Website Title</title>
+                <meta
+                    name="description"
+                    content={t("seo:description")}
+                />
+                <meta
+                    name="keywords"
+                    content={t("seo:keywords")}
+                />
+                <meta name="author" content="Tatarinov Kirill"/>
+                <meta name="robots" content="index, follow"/>
+                {/* Open Graph meta tags for social media sharing */}
+                <meta property="og:title" content="Tatarinov Kirill - Front-end Developer"/>
+                <meta
+                    property="og:description"
+                    content={t("seo:ogDescription")}
+                />
+                <meta property="og:image" content="https://hireme.studiobox.dev/ogImage.png"/>
+                <meta property="og:url" content="https://hireme.studiobox.dev/"/>
+                <meta property="og:type" content="website"/>
+                {/* Twitter Card meta tags for Twitter sharing */}
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:title" content="Tatarinov Kirill - Front-end Developer"/>
+                <meta
+                    name="twitter:description"
+                    content={t("seo:ogDescription")}
+                />
+                <meta name="twitter:image" content="https://hireme.studiobox.dev/ogImage.png"/>
+                <link rel="canonical" href="https://hireme.studiobox.dev/"/>
+
+
+
+                <title>Tatarinov Kirill - Front-end Developer | Portfolio</title>
+
+
+                <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+                <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+                <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+                <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+                <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+                <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+                <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+                <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="192x192"
+                    href="/android-icon-192x192.png"
+                />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                <link rel="manifest" href="/manifest.json" />
+                <meta name="msapplication-TileColor" content="#0f0f15" />
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+                <meta name="theme-color" content="#0f0f15" />
+
             </Head>
             <Layout>
-                {/* Pass the Component and pageProps to the layout */}
                 <Provider store={store}>
                     <Component {...pageProps} />
                 </Provider>

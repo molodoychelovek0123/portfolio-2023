@@ -2,6 +2,6 @@
   "locales": ["en-US", "ru"],
   "defaultLocale": "en-US",
   "pages": {
-    "*": ["translation","about"]
+    "*": ["about","expertise","contact", "tools", "seo", "portfolio"]
   }
 }
