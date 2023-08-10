@@ -2,8 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import image from "@/static-content/about.jpg"
 import {AnimatedTextWord} from "@/components/animation/AnimatedTextWord";
+import  useTranslation  from 'next-translate/useTranslation';
 
 export const About = () => {
+
+    const { t } = useTranslation();
     return (
         <>
         <div

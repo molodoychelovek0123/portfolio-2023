@@ -1,6 +1,6 @@
 import {AppProps} from 'next/app';
 import Head from 'next/head';
-import React, {ReactNode, useEffect} from 'react';
+import React, {ReactNode, useEffect, useState} from 'react';
 
 //import {usePathname} from "next/navigation";
 import {Provider} from "react-redux";
@@ -38,13 +38,13 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
     });
     return (
         <>
-                <header>
-                    <h1> Im a header</h1>
-                </header>
-                <main className="relative">{children}</main>
-                <footer>
-                    <h1> Im a footer</h1>
-                </footer>
+            <header>
+                <h1> Im a header</h1>
+            </header>
+            <main className="relative">{children}</main>
+            <footer>
+                <h1> Im a footer</h1>
+            </footer>
         </>
     );
 };
