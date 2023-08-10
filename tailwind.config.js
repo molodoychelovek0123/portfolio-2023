@@ -59,7 +59,7 @@ module.exports = {
         '.a-y-centered': {
           position: 'absolute',
           top: '50%',
-          transform: "translate(0, -50%)"
+          transform: "translate(0, -50%) !important"
         },
         '.title': {
           fontFamily: theme('fontFamily.title-font'),
