@@ -9,7 +9,7 @@ import useTranslation from "next-translate/useTranslation";
 export const Tools = () => {
     const {t} = useTranslation();
    return (
-    <div className="container mb-96">
+    <div className="container mb-48">
         <AnimatedTextWord
             className="font-title text-4xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
             text={t("tools:title")}/>
