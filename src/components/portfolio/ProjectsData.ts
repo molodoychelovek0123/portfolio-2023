@@ -260,7 +260,7 @@ export const Projects: MultilingualProjects = {
             ],
             customClassNames: {
                 description: "max-w-[500px]",
-                image: "w-full h-auto left-0"
+                image: "w-full h-auto left-0 sk8-m"
             }
         },
         {

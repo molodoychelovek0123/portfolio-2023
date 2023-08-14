@@ -10,6 +10,8 @@ import "@/styles/global.scss";
 import useBlobity from "blobity/lib/react/useBlobity";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
+import Image from "next/image";
+import {Dropdown} from "@/components/language-dropdown/Dropdown";
 
 
 interface LayoutProps {
@@ -18,6 +20,8 @@ interface LayoutProps {
 
 
 const Layout: React.FC<LayoutProps> = ({children}) => {
+
+    const {t, lang} = useTranslation();
     //const pageType = usePathname();
     const blobity = useBlobity({
         licenseKey: 'molodoychelovek0123', // This is an open source solution that you can buy for $24 or use for free in open source projects
@@ -41,10 +45,10 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
     return (
         <>
             <header>
-                <h1> Im a header</h1>
+                {/*<Image src={`/${lang}.svg`} alt="Localization Flag" width={32} height={32} className="rounded-full" />*/}
+                {/*<div> {t('header:local')} </div>*/}
+                <Dropdown/>
             </header>
-            <Link locale="en" href={"/"} > English </Link>
-            <Link locale="ru" href={"/"} > Russian </Link>
             <main className="relative">{children}</main>
             <footer>
                 <h1> Im a footer</h1>
@@ -94,32 +98,31 @@ function MyApp({Component, pageProps}: AppProps) {
                 <link rel="canonical" href="https://hireme.studiobox.dev/"/>
 
 
-
                 <title>Tatarinov Kirill - Front-end Developer | Portfolio</title>
 
 
-                <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-                <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-                <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-                <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-                <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
-                <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
-                <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
-                <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
-                <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+                <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>
+                <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"/>
+                <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"/>
+                <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"/>
+                <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"/>
+                <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"/>
+                <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"/>
+                <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"/>
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"/>
                 <link
                     rel="icon"
                     type="image/png"
                     sizes="192x192"
                     href="/android-icon-192x192.png"
                 />
-                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-                <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-                <link rel="manifest" href="/manifest.json" />
-                <meta name="msapplication-TileColor" content="#0f0f15" />
-                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-                <meta name="theme-color" content="#0f0f15" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+                <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+                <link rel="manifest" href="/manifest.json"/>
+                <meta name="msapplication-TileColor" content="#0f0f15"/>
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+                <meta name="theme-color" content="#0f0f15"/>
 
             </Head>
             <Layout>

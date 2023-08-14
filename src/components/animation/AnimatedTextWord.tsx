@@ -4,6 +4,7 @@ import {motion} from "framer-motion";
 export const AnimatedTextWord = ({text, className}: { text: string, className?: string }) => {
 
 
+
     const words = text.split(" ");
 
 // Variants for Container of words.
@@ -45,7 +46,7 @@ export const AnimatedTextWord = ({text, className}: { text: string, className?: 
                 variants={container}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{once: true}}
+                viewport={{once: false}}
             >
                 {words.map((word, index) => (
                     <motion.span

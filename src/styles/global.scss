@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   @apply bg-solid text-white max-w-full overflow-x-hidden;
 }
 
-header, footer{
+footer {
   display: none;
 }
 
@@ -44,6 +44,7 @@ header, footer{
   width: 6px;
   width: 6px;
 }
+
 *::-webkit-scrollbar-track {
   border-radius: 0px;
   background-color: #0F0F15;
@@ -73,10 +74,10 @@ header, footer{
 
 .overlay-mask {
   //-webkit-mask-image: linear-gradient(0deg,#000,transparent 40%);
-  mask-image: linear-gradient(0deg,#000,transparent 40%);
+  mask-image: linear-gradient(0deg, #000, transparent 40%);
 }
 
-.grain{
+.grain {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -84,8 +85,26 @@ header, footer{
   opacity: 0.13;
 }
 
-.sk8-m{
-  @media (max-width: 768px){
+.sk8-m {
+  @media (max-width: 768px) {
     margin-bottom: -150px;
   }
+}
+
+.a-pic {
+  @media (max-width: 768px) {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+
+header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
 }

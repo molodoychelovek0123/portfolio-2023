@@ -11,7 +11,7 @@ export const About = () => {
         <>
             <div
                 className="container flex flex-col items-start gap-10 md:gap-12 md:flex-row mt-20 md:mt-24 xl:mt-28 ">
-                <Image src={image} alt="Kirill Tatarinov - Web Developer" className="rounded-full sm:h-[150px] sm:w-[150px]"/>
+                <Image src={image} alt="Kirill Tatarinov - Web Developer" className="rounded-full a-pic"/>
                 <div>
                     <AnimatedTextWord
                         className="font-title text-4xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
