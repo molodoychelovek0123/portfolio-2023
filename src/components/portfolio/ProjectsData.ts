@@ -4,6 +4,9 @@ import sk8 from "@/static-content/portfolio-products/sk8.png";
 import gomadre from "@/static-content/portfolio-products/gomadre.png"
 import box_dev from "@/static-content/portfolio-products/box.dev.png"
 import hey from "@/static-content/portfolio-products/hey.png"
+import agave_en_linea from "@/static-content/portfolio-products/agave-en-linea.svg"
+import somm from "@/static-content/portfolio-products/somm.png"
+import class_wiki from "@/static-content/portfolio-products/class-wiki.png"
 
 export type MultilingualProjects = {
     en: ProjectProps[],
@@ -168,14 +171,18 @@ export const Projects: MultilingualProjects = {
                     url: "https://sommtableimports.com/"
                 }
             ],
+            image: somm,
             technologies: [
                 t.js,
                 t.php,
                 t.sass,
                 t.shopify,
             ],
-            cardType: "large", customClassNames: {
-                description: "max-w-[650px]"
+            cardType: "large",
+            customClassNames: {
+                description: "max-w-[650px]",
+                bottomIndent: "mb-32",
+                image: "somm-m"
             }
         },
         {
@@ -187,12 +194,14 @@ export const Projects: MultilingualProjects = {
                     url: "https://class.wiki/"
                 }
             ],
+            image: class_wiki,
             technologies: [
                 t.ts,
                 t.react,
                 t.sass,
             ], customClassNames: {
-                description: "max-w-[390px]"
+                description: "max-w-[390px]",
+                image: "max-w-[50%] h-auto right-0"
             }
         },
         {
@@ -218,6 +227,7 @@ export const Projects: MultilingualProjects = {
         {
             title: "Agave En Linea",
             description: "Agave en Linea is a GoMadre partner, selling mezcal and agave distillates from Mexico. Worked on interfaces, SquareSpace and Shopify integrations, delivering high quality and culturally immersive experiences",
+            image: agave_en_linea,
             links: [
                 {
                     text: "Visit Site",
@@ -393,14 +403,18 @@ export const Projects: MultilingualProjects = {
                     url: "https://sommtableimports.com/"
                 }
             ],
+            image: somm,
             technologies: [
                 t.js,
                 t.php,
                 t.sass,
                 t.shopify,
             ],
-            cardType: "large", customClassNames: {
-                description: "max-w-[650px]"
+            cardType: "large",
+            customClassNames: {
+                description: "max-w-[650px]",
+                bottomIndent: "mb-32",
+                image: "somm-m"
             }
         },
         {
@@ -412,12 +426,14 @@ export const Projects: MultilingualProjects = {
                     url: "https://class.wiki/"
                 }
             ],
+            image: class_wiki,
             technologies: [
                 t.ts,
                 t.react,
                 t.sass,
             ], customClassNames: {
-                description: "max-w-[390px]"
+                description: "max-w-[390px]",
+                image: "max-w-[50%] h-auto right-0"
             }
         },
         {
@@ -443,6 +459,7 @@ export const Projects: MultilingualProjects = {
         {
             title: "Agave En Linea",
             description: "Agave en Linea - партнер GoMadre, продает мескаль и агавные дистилляты из Мексики. Работал над интерфейсами, интеграциями SquareSpace и Shopify, обеспечивая высокое качество и культурно насыщенные впечатления.",
+            image: agave_en_linea,
             links: [
                 {
                     text: "Перейти на сайт",

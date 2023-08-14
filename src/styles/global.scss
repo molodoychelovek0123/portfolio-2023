@@ -90,6 +90,13 @@ footer {
     margin-bottom: -150px;
   }
 }
+.somm-m{
+  @media (max-width: 768px) {
+    height: 40%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
 
 .a-pic {
   @media (max-width: 768px) {
@@ -108,3 +115,4 @@ header{
   justify-content: flex-end;
   z-index: 100;
 }
+

@@ -78,7 +78,7 @@ export const ProjectCard = ({
                             ref={containerRef}></div>
                         <div className={`${styles.card} rounded-card h-full`}>
                             {image &&
-                                <Image src={image} alt={`${title} - Product Image`} placeholder={"blur"} loading={"lazy"} className={`${styles.image}  absolute bottom-0 opacity-70 ${customClassNames ? customClassNames.image : ""}`}/>
+                                <Image src={image} alt={`${title} - Product Image`} loading={"lazy"} className={`${styles.image}  absolute bottom-0 opacity-70 ${customClassNames ? customClassNames.image : ""}`}/>
                             }
                             <Grain/>
                             <div
