@@ -4,6 +4,7 @@ import {Data} from "./ToolsData";
 import {ToolsRow} from "@/components/tools/ToolsRow";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
+import {Button} from "@/components/common/Button";
 
 
 export const Tools = () => {
@@ -19,11 +20,11 @@ export const Tools = () => {
 
 
         <div className="mb-10"></div>
-
-        <Link href="https://studiobox.dev/resume"
-              className="active:bg-purple-400 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] bg-purple-900 duration-150 ease-in-out focus:bg-primary-600 focus:outline-none focus:ring-0 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] font-medium hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] inline-block leading-normal pb-2 pt-2.5 px-6 rounded shadow-[0_4px_9px_-4px_#3b71ca] text-white text-xs transition uppercase">
-            {t("tools:resume")}
-        </Link>
+<Button link={"https://studiobox.dev/resume"} dark={false}>{t("tools:resume")} </Button>
+        {/*<Link href="https://studiobox.dev/resume"*/}
+        {/*      className="active:bg-purple-400 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] bg-purple-900 duration-150 ease-in-out focus:bg-primary-600 focus:outline-none focus:ring-0 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] font-medium hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] inline-block leading-normal pb-2 pt-2.5 px-6 rounded shadow-[0_4px_9px_-4px_#3b71ca] text-white text-xs transition uppercase">*/}
+        {/*    */}
+        {/*</Link>*/}
 
     </div>
 );
