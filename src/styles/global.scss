@@ -83,3 +83,9 @@ header, footer{
   pointer-events: none;
   opacity: 0.13;
 }
+
+.sk8-m{
+  @media (max-width: 768px){
+    margin-bottom: -150px;
+  }
+}

@@ -19,8 +19,19 @@ module.exports = {
       fontFamily:{
         title:['Syne', 'sans-serif'],
       },
+      height:{
+        "display": "100dvh",
+        "moreDisplay": "101dvh",
+      },
+      maxHeight:{
+        "display": "100dvh",
+      },
+      width:{
+        "display": "100dvw",
+      },
       maxWidth:{
         "2.5xl": "45rem",
+        "display": "100dvw"
       },
       fontSize:{
         title:"3.75rem",

@@ -11,7 +11,7 @@ export const Tools = () => {
    return (
     <div className="container mb-96">
         <AnimatedTextWord
-            className="font-title text-5xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
+            className="font-title text-4xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
             text={t("tools:title")}/>
         {Data.map((item,index) =>
             <ToolsRow {...item} key={index}/>

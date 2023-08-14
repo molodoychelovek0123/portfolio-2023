@@ -8,6 +8,7 @@ import {Expertise} from "@/components/expertise/Expertise";
 import {ProjectGrid} from "@/components/portfolio/ProjectGrid";
 import {Tools} from "@/components/tools/Tools";
 import {Contact} from "@/components/contact/Contact";
+import {Overlay} from "@/components/blur-overlay/Overlay";
 
 
 const Home: React.FC = () => {
@@ -17,12 +18,7 @@ const Home: React.FC = () => {
 
     return (
         <div>
-            <div
-                className="fixed inset-0 p-1 w-full h-full backdrop-blur-[8px] pointer-events-none z-50 opacity-1 overlay-mask"
-            ></div>
-            <div
-                className="fixed inset-0 p-1 w-full h-full bg-gradient-to-t from-bg-dark to-transparent opacity-40 pointer-events-none z-40"
-            ></div>
+            <Overlay/>
             <Preloader/>
 
             <Boxes/>

@@ -9,7 +9,7 @@ const PRELOADER_DURATION = 3000;
 
 const OutlineSvg = ({isGradient}: { isGradient: boolean }) => (
 
-    <svg className={`a-centered w-[30%] h-[60%] ${isGradient ? '' : styles.svg_animation} pb-[3%]`} width="487" height="517"
+    <svg className={`a-centered w-[240px] h-[240px]  md:w-[30%] md:h-[60%] md:pb-[3%] ${isGradient ? '' : styles.svg_animation} `} width="487" height="517"
          viewBox="0 0 487 517" fill="none" xmlns="http://www.w3.org/2000/svg"
          style={{"--duration": `${PRELOADER_DURATION}ms`} as React.CSSProperties}>
         <path

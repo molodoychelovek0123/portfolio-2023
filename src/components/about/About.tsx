@@ -11,10 +11,10 @@ export const About = () => {
         <>
             <div
                 className="container flex flex-col items-start gap-10 md:gap-12 md:flex-row mt-20 md:mt-24 xl:mt-28 ">
-                <Image src={image} alt="Kirill Tatarinov - Web Developer" className="rounded-full"/>
+                <Image src={image} alt="Kirill Tatarinov - Web Developer" className="rounded-full sm:h-[150px] sm:w-[150px]"/>
                 <div>
                     <AnimatedTextWord
-                        className="font-title text-5xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
+                        className="font-title text-4xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
                         text={t('about:title')}/>
                     <p className="leading-description text-base md:text-lg xl:text-2xl">
                         {

@@ -19,7 +19,7 @@ export const ProjectGrid = () => {
         <>
             <div className="container my-40 xl:my-48">
                 <AnimatedTextWord
-                    className="font-title text-5xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
+                    className="font-title text-4xl md:text-title leading-title mb-5 md:mb-6 xl:mb-8 flex flex-wrap"
                     text={t("portfolio:title")}/>
                 <div className={`${styles.grid} w-full`}>
                     {p.map(project =>

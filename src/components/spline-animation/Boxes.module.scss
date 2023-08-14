@@ -1,7 +1,21 @@
 .wrapper{
   @apply w-full overflow-x-hidden;
+  >div{
+    @media (max-width: 768px){
+      display: flex;
+      justify-content: center;
+    }
+  }
   canvas{
-    width: 100% !important;
+
     height: auto !important;
+    width: 500px !important;
+    @media (min-width: 320px){
+      width: 768px !important;
+    }
+    @media (min-width: 768px){
+
+      width: 100% !important;
+    }
   }
 }
