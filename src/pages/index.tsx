@@ -8,7 +8,7 @@ import {Expertise} from "@/components/expertise/Expertise";
 import {ProjectGrid} from "@/components/portfolio/ProjectGrid";
 import {Tools} from "@/components/tools/Tools";
 import {Contact} from "@/components/contact/Contact";
-import {Overlay} from "@/components/blur-overlay/Overlay";
+import {Overlay} from "@/components/common/Overlay";
 
 
 const Home: React.FC = () => {

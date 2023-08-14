@@ -41,7 +41,7 @@ module.exports = {
         description: "140%",
         cTitle: "120%",
         cDescription: "150%",
-
+        contactCTA: "87.4%",
       },
       borderRadius:{
         card: "25px",
@@ -50,6 +50,9 @@ module.exports = {
         "solid": "#0f0f15",
         "outline": "#e5e7eb",
         "descriptionColor": "#96979D",
+      },
+      backgroundImage:{
+        "gradient-purple": "linear-gradient(139deg, #6121A0 0%, #3B1264 100%);"
       }
     }
   },

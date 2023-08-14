@@ -12,6 +12,7 @@ import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import Image from "next/image";
 import {Dropdown} from "@/components/language-dropdown/Dropdown";
+import styles from "*.module.scss";
 
 
 interface LayoutProps {
@@ -51,7 +52,9 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
             </header>
             <main className="relative">{children}</main>
             <footer>
-                <h1> Im a footer</h1>
+                <div className="h-[500px] overflow-hidden relative" >
+                    <video src="/abstract.mp4" className={`absolute top-0 left-0 w-full h-full object-cover bg_mask`} autoPlay muted loop></video>
+                </div>
             </footer>
         </>
     );
