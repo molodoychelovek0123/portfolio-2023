@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import {InView} from "react-intersection-observer"
-import {Grain} from "@/components/grain/Grain"
+import {Grain} from "@/components/common/Grain"
 
 import styles from './ProjectCard.module.scss';
 
