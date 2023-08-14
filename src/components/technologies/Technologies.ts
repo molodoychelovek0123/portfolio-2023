@@ -7,14 +7,18 @@ import Jest from '@/static-content/technologies/jest.svg';
 import Node from '@/static-content/technologies/node.svg';
 import PHP from '@/static-content/technologies/php.svg';
 import Prisma from '@/static-content/technologies/prisma.svg';
-import R from '@/static-content/technologies/react.svg';
 import Redux from '@/static-content/technologies/redux.svg';
 import Sass from '@/static-content/technologies/sass.svg';
 import Squarespace from '@/static-content/technologies/squarespace.svg';
 import Tailwind from '@/static-content/technologies/tailwind.svg';
 import Tina from '@/static-content/technologies/tina.svg';
+import R from '@/static-content/technologies/react.svg';
 import T from '@/static-content/technologies/ts.svg';
 import J from '@/static-content/technologies/js.svg';
+import Tilda from '@/static-content/technologies/tilda.svg';
+import Shopify from '@/static-content/technologies/shopify.svg';
+import Liquid from '@/static-content/technologies/liquid.svg';
+import Express from '@/static-content/technologies/express.svg';
 
 
 export enum Technologies{
@@ -25,17 +29,17 @@ export enum Technologies{
     tina = Tina,
     tailwind = Tailwind,
     react = R,
-    liquid = Apple,
-    shopify = Apple,
+    liquid = Liquid,
+    shopify = Shopify,
     sass = Sass,
     php = PHP,
     gsap = GSAP,
     squarespace = Squarespace,
-    tilda = Apple,
+    tilda = Tilda,
     jest = Jest,
     redux = Redux,
     node = Node,
-    express = Apple,
+    express = Express,
     github = Github,
     figma = Figma,
     prisma = Prisma,
