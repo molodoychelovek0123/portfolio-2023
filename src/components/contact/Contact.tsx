@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./Contact.module.scss";
+import useTranslation from "next-translate/useTranslation";
 
 const LinkedInIcon = () => (
     <svg
@@ -120,6 +121,8 @@ export const Contact = () => {
         setAboutIsOpen(false);
     }
 
+
+    const {t} = useTranslation();
     return (
         <>
             <div className="relative">
@@ -130,13 +133,15 @@ export const Contact = () => {
                         "--tablet-size": "100",
                         "--desktop-size": "160"
                     } as React.CSSProperties}>
-                    Did you like <br/>
-                    my work?<br/>
-                    - write to me.
+                    {
+                        t('contact:CTA').split('\n').map((item, index) =>
+                            <React.Fragment key={index}>{index !== 0 && <br/>}{item}</React.Fragment>
+                        )
+                    }
                 </h3>
                 <div className="a-centered flex flex-col md:flex-row justify-center gap-4 text-center">
-                    <Button type={"tall"} link={"#!"} onClick={openContactModal}> Contacts </Button>
-                    <Button type={"tall"} link={"#!"} onClick={openAboutModal}> More about me </Button>
+                    <Button type={"tall"} link={"#!"} onClick={openContactModal}> {t('contact:contact_button')} </Button>
+                    <Button type={"tall"} link={"#!"} onClick={openAboutModal}> {t('contact:about_button')} </Button>
                 </div>
             </div>
 
@@ -152,7 +157,7 @@ export const Contact = () => {
                         className="absolute top-2 right-4 pr-2 pl-2 pb-0.5 cursor-none">x
                 </button>
                 <div className={`${styles.contact_item} my-4`}>
-                    <Button link="https://www.linkedin.com/in/boxdeveloper/">
+                    <Button link="https://www.linkedin.com/in/boxdeveloper/" dark={false}>
 
                         <LinkedInIcon/>
 
@@ -160,7 +165,7 @@ export const Contact = () => {
                 </div>
 
                 <div className={`${styles.contact_item} my-4`}>
-                    <Button link="https://tg.me/boxdeveloper">
+                    <Button link="https://tg.me/boxdeveloper" dark={false}>
 
                         <TgIcon/>
 
@@ -168,7 +173,7 @@ export const Contact = () => {
                 </div>
 
                 <div className={`${styles.contact_item} my-4`}>
-                    <Button link="https://github.com/molodoychelovek0123/">
+                    <Button link="https://github.com/molodoychelovek0123/" dark={false}>
 
                         <GithubIcon/>
 
@@ -176,7 +181,7 @@ export const Contact = () => {
                 </div>
 
                 <div className={`${styles.contact_item} my-4`}>
-                    <Button link="mailto:boxdeveloper@studiobox.dev">
+                    <Button link="mailto:boxdeveloper@studiobox.dev" dark={false}>
 
                         <EmailIcon/>
 
@@ -195,10 +200,11 @@ export const Contact = () => {
                 </button>
 
                 <p className="text-lg leading-description my-4">
-                    My portfolio is a dynamic collection of projects across a variety of fields. Unfortunately, I can't
-                    present them all on this page, but you can take a peek at my full portfolio to get a full picture of
-                    the diverse work I've been involved in. From design to development, this portfolio shows the
-                    evolution of my skills.
+                    {
+                        t('contact:journey_text').split('\n').map((item, index) =>
+                            <React.Fragment key={index}>{index !== 0 && <br/>}{item}</React.Fragment>
+                        )
+                    }
 
                 </p>
                 <p className={"my-4"}>
@@ -207,8 +213,12 @@ export const Contact = () => {
 
                 <h5 className="text-3xl md:text-4xl xl:text-5xl uppercase font-title font-semibold">My Friends</h5>
 
-                <p className="text-lg leading-description"> You can also check out my friends portfolios. I've worked
-                    closely with each studio at different times, and my contribution to their portfolios is there too
+                <p className="text-lg leading-description">
+                    {
+                        t('contact:friends_text').split('\n').map((item, index) =>
+                            <React.Fragment key={index}>{index !== 0 && <br/>}{item}</React.Fragment>
+                        )
+                    }
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-8">
