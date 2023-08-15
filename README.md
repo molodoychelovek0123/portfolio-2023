@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kirill Tatarinov - Portfolio
 
-## Getting Started
+![Portfolio Preview](public/preview/preloader.jpg)
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Welcome to my portfolio repository! This repository showcases my personal portfolio website built using TypeScript, Next.js, TailwindCSS, Blobity, Framer Motion, next-translate, redux, and Spline.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+As a passionate Frontend Developer, I'm dedicated to creating user-friendly and visually appealing web applications. This portfolio serves as a demonstration of my skills, experience, and the technologies I'm proficient in.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Blobity](https://blobity.dev/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [next-translate](https://github.com/vinissimus/next-translate)
+- [Redux](https://redux.js.org/)
+- [Spline](https://spline.design/)
 
-## Learn More
+## About Me
 
-To learn more about Next.js, take a look at the following resources:
+My name is Kirill Tatarinov, and I am a Frontend Developer with a strong passion for creating intuitive and interactive user experiences. Here's a brief overview of my professional journey:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **2020-2021:** Worked as a Web Developer at [Studiobox.dev](https://studiobox.dev/), contributing to various web projects and gaining valuable experience in the industry.
+- **2021-2023:** Served as a Frontend Developer at [NMA](https://newmedia.agency/), where I honed my skills in building responsive and performant user interfaces.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I was born on October 30, 2001. Living in Moscow, Russia. You can contact me via email at [boxdeveloper@studiobox.dev](mailto:boxdeveloper@studiobox.dev).
 
-## Deploy on Vercel
+## Portfolio Preview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Boxes Preview](public/preview/boxes.gif)
+![Projects Preview](public/preview/projects.png)
+![Tools Preview](public/preview/tools.gif)
+![Contact Preview](public/preview/contact.gif)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## How to Use This Portfolio
+
+1. Clone this repository using the following command:
+
+   ```bash
+   git clone https://github.com/molodoychelovek0123/portfolio-2023.git
+   ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd portfolio-2023
+   ```
+
+3. Install the required dependencies:
+   
+   ```bash 
+    yarn install
+   ```
+
+4. Start the development server:
+   ```bash 
+   yarn dev
+   ```
+   
+5. Open your browser and visit http://localhost:3000 to view the portfolio.
+
+Feel free to explore the code, make improvements, and customize the portfolio to make it your own!
+
+---
+
+Thank you for visiting my portfolio. If you have any questions or would like to chat, please do contact me.
