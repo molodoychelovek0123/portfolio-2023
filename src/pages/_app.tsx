@@ -14,6 +14,7 @@ import Image from "next/image";
 import {Dropdown} from "@/components/language-dropdown/Dropdown";
 import styles from "*.module.scss";
 import {Schema} from "@/components/common/Schema";
+import {YandexMetricaProvider} from "next-yandex-metrica";
 
 
 interface LayoutProps {
@@ -130,9 +131,14 @@ function MyApp({Component, pageProps}: AppProps) {
 
             </Head>
             <Layout>
-                <Provider store={store}>
-                    <Component {...pageProps} />
-                </Provider>
+                <YandexMetricaProvider
+                    tagID={94641596}
+                    initParameters={{ clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }}
+                >
+                    <Provider store={store}>
+                        <Component {...pageProps} />
+                    </Provider>
+                </YandexMetricaProvider>
             </Layout>
             <Schema/>
         </>

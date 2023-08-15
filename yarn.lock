@@ -1059,6 +1059,11 @@ next-translate@^2.5.3:
   resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-2.5.3.tgz#cd81d9f1d603e6afddcf82a546b6cc6d4142c09c"
   integrity sha512-Wl4CWqqIqeoPlrKmTgnc7w49mOEi93INUnfVHJDTqNKavlhFg26isqy0LGKWHcvthGiPFBoh5aOXBqhGEfzrSw==
 
+next-yandex-metrica@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/next-yandex-metrica/-/next-yandex-metrica-1.0.0.tgz#aa6b16f063cffa2c0dfbaf1d7310cc517919b4af"
+  integrity sha512-8HcJs4XMFnN0LSs8o8iewzZnByOL91QzoKNIvHGMNevAVi9bpvnzv92fmFccbwghG6hGIhmIPERVbBBfzo9M5w==
+
 next@13.4.13:
   version "13.4.13"
   resolved "https://registry.npmjs.org/next/-/next-13.4.13.tgz"
