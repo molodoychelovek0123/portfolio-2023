@@ -94,6 +94,8 @@ const customStyles = {
         borderRadius: 15,
         padding: 40,
         maxWidth: "768px",
+        maxHeight: "80vh",
+        overflow: "scroll",
     },
     overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0.55)',
@@ -126,9 +128,9 @@ export const Contact = () => {
     return (
         <>
             <div className="relative">
-                <h3 className="responsive_text uppercase text-center leading-contactCTA font-bold"
+                <h3 className={`responsive_text uppercase text-center leading-contactCTA font-bold ${styles.cta}`}
                     style={{
-                        "--small-size": "65",
+                        "--small-size": "22",
                         "--phone-size": "80",
                         "--tablet-size": "100",
                         "--desktop-size": "160"
@@ -139,8 +141,10 @@ export const Contact = () => {
                         )
                     }
                 </h3>
-                <div className="a-centered flex flex-col md:flex-row justify-center gap-4 text-center">
-                    <Button type={"tall"} link={"#!"} onClick={openContactModal}> {t('contact:contact_button')} </Button>
+                <div
+                    className={`a-centered flex flex-col md:flex-row justify-center gap-4 text-center ${styles.button_container}`}>
+                    <Button type={"tall"} link={"#!"}
+                            onClick={openContactModal}> {t('contact:contact_button')} </Button>
                     <Button type={"tall"} link={"#!"} onClick={openAboutModal}> {t('contact:about_button')} </Button>
                 </div>
             </div>
@@ -153,7 +157,7 @@ export const Contact = () => {
                 contentLabel="Contact me"
             >
                 <h4 className="text-4xl md:text-5xl xl:text-6xl uppercase font-title font-semibold">Contact me</h4>
-                <button data-blobity onClick={closeContactModal}
+                <button data-blobity="true" onClick={closeContactModal}
                         className="absolute top-2 right-4 pr-2 pl-2 pb-0.5 cursor-none">x
                 </button>
                 <div className={`${styles.contact_item} my-4`}>
@@ -195,7 +199,7 @@ export const Contact = () => {
                 contentLabel="Contact me"
             >
                 <h4 className="text-4xl md:text-5xl xl:text-6xl uppercase font-title font-semibold">My Journey</h4>
-                <button data-blobity onClick={closeAboutModal}
+                <button data-blobity="true" onClick={closeAboutModal}
                         className="absolute top-2 right-4 pr-2 pl-2 pb-0.5 cursor-none">x
                 </button>
 
@@ -208,7 +212,9 @@ export const Contact = () => {
 
                 </p>
                 <p className={"my-4"}>
-                    <Button link={"https://docs.google.com/spreadsheets/d/1GJdaFRZZwJPZ2dcZq6TgpTZm8JHnirCiHgmb_mRG1KM/"} type={"wide"} dark={false}> Full portfolio </Button>
+                    <Button
+                        link={"https://docs.google.com/spreadsheets/d/1GJdaFRZZwJPZ2dcZq6TgpTZm8JHnirCiHgmb_mRG1KM/"}
+                        type={"wide"} dark={false}> Full portfolio </Button>
                 </p>
 
                 <h5 className="text-3xl md:text-4xl xl:text-5xl uppercase font-title font-semibold">My Friends</h5>
@@ -222,13 +228,23 @@ export const Contact = () => {
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-8">
-                    <Link  data-no-blobity href={"https://studiobox.dev"}> <Image src={"/box_dev.png"} alt={"Box Dev Logotype"} height={100} width={100} objectFit={"contain"}/></Link>
-                    <Link  data-no-blobity href={"https://newmedia.agency"}> <Image src={"/nma.svg"} alt={"New Media Agency Logotype"} height={40} width={150} objectFit={"contain"}/></Link>
-                    <Link  data-no-blobity href={"https://wixlab.com"}> <Image src={"/wixlab.webp"} alt={"Wixlab Logotype"} height={40} width={150} objectFit={"contain"}/></Link>
-                    <Link  data-no-blobity href={"https://iskra.studio"}> <Image src={"/iskra.svg"} alt={"Iskra Studio Logotype"} height={85} width={100} objectFit={"contain"}/></Link>
+                    <Link data-no-blobity href={"https://studiobox.dev"}> <Image src={"/box_dev.png"}
+                                                                                 alt={"Box Dev Logotype"} height={100}
+                                                                                 width={100}
+                                                                                 objectFit={"contain"}/></Link>
+                    <Link data-no-blobity href={"https://newmedia.agency"}> <Image src={"/nma.svg"}
+                                                                                   alt={"New Media Agency Logotype"}
+                                                                                   height={40} width={150}
+                                                                                   objectFit={"contain"}/></Link>
+                    <Link data-no-blobity href={"https://wixlab.com"}> <Image src={"/wixlab.webp"}
+                                                                              alt={"Wixlab Logotype"} height={40}
+                                                                              width={150} objectFit={"contain"}/></Link>
+                    <Link data-no-blobity href={"https://iskra.studio"}> <Image src={"/iskra.svg"}
+                                                                                alt={"Iskra Studio Logotype"}
+                                                                                height={85} width={100}
+                                                                                objectFit={"contain"}/></Link>
 
                 </div>
-
 
 
             </Modal>

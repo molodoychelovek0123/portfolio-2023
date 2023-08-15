@@ -210,7 +210,7 @@ export const Projects: MultilingualProjects = {
             links: [
                 {
                     text: "Visit Site",
-                    url: "https://heywithlove.ru/"
+                    url: "https://heywithlove.com/"
                 }
             ],
             image: hey,
@@ -442,7 +442,7 @@ export const Projects: MultilingualProjects = {
             links: [
                 {
                     text: "Перейти на сайт",
-                    url: "https://heywithlove.ru/"
+                    url: "https://heywithlove.com/"
                 }
             ],
             image: hey,

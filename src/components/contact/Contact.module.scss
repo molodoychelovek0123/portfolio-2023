@@ -1,5 +1,17 @@
-.contact_item{
+.cta {
+  @media (max-width: 768px){
+    letter-spacing: -0.04em;
+  }
+}
+
+.button_container{
   a{
+    white-space: nowrap;
+  }
+}
+
+.contact_item {
+  a {
     display: block;
   }
 }
