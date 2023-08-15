@@ -17,7 +17,7 @@ module.exports = {
     extend:{
 
       fontFamily:{
-        title:['Syne', 'sans-serif'],
+        title:['Syne', 'Ubuntu', 'sans-serif'],
       },
       height:{
         "display": "100dvh",
