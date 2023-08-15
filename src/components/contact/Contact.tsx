@@ -165,7 +165,7 @@ export const Contact = () => {
                 </div>
 
                 <div className={`${styles.contact_item} my-4`}>
-                    <Button link="https://tg.me/boxdeveloper" dark={false}>
+                    <Button link="https://t.me/boxdeveloper" dark={false}>
 
                         <TgIcon/>
 

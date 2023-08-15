@@ -13,6 +13,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {Dropdown} from "@/components/language-dropdown/Dropdown";
 import styles from "*.module.scss";
+import {Schema} from "@/components/common/Schema";
 
 
 interface LayoutProps {
@@ -133,6 +134,7 @@ function MyApp({Component, pageProps}: AppProps) {
                     <Component {...pageProps} />
                 </Provider>
             </Layout>
+            <Schema/>
         </>
     );
 }
