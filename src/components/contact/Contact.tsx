@@ -144,8 +144,8 @@ export const Contact = () => {
                 <div
                     className={`a-centered flex flex-col md:flex-row justify-center gap-4 text-center ${styles.button_container}`}>
                     <Button type={"tall"} link={"#!"}
-                            onClick={openContactModal}> {t('contact:contact_button')} </Button>
-                    <Button type={"tall"} link={"#!"} onClick={openAboutModal}> {t('contact:about_button')} </Button>
+                            onClick={openContactModal} colored={true} dark={true}> {t('contact:contact_button')} </Button>
+                    <Button type={"tall"} link={"#!"} onClick={openAboutModal} colored={true} dark={false}> {t('contact:about_button')} </Button>
                 </div>
             </div>
 
