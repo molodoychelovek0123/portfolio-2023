@@ -128,7 +128,7 @@ export const Contact = () => {
     return (
         <>
             <div className="relative">
-                <h3 className={`responsive_text uppercase text-center leading-contactCTA font-bold ${styles.cta}`}
+                <h3 className={`responsive_text uppercase text-center leading-contactCTA font-bold blur-[2px] ${styles.cta}`}
                     style={{
                         "--small-size": "22",
                         "--phone-size": "80",
